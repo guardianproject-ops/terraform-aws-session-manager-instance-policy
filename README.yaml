@@ -41,7 +41,7 @@ usage: |-
   }
   ```
 
-related: []
+related:
   - name: terraform-aws-ssm-ansible-setup
     description: Terraform module that creates the s3 bucket and policies for session manager
     url: https://gitlab.com/guardianproject-ops/terraform-aws-ssm-ansible-setup
