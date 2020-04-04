@@ -1,0 +1,57 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: terraform-aws-session-manager-instance-policy
+
+# License of this project
+license: "AGPL3"
+
+# Canonical GitLab repo
+gitlab_repo: guardianproject-ops/terraform-aws-session-manager-instance-policy
+
+# Badges to display
+badges: []
+
+# Short description of this project
+description: |-
+  This is a terraform module creates an IAM policy that allows EC2 instances the capability to be used by the session manager and log sessions to S3.
+
+introduction: |-
+  This module:
+
+
+# How to use this project
+usage: |-
+
+  ```hcl
+  module "session_manager_instance_policy" {
+    source          = "git::https://gitlab.com/guardianproject-ops/terraform-aws-session-manager-instance-policy?ref=tags/0.1.0"
+    namespace       = var.namespace
+    name            = var.name
+    stage           = var.stage
+    delimiter       = var.delimiter
+    tags            = var.tags
+    region          = var.region
+    s3_bucket_name  = var.ssm_logs_bucket
+    s3_key_prefix   = module.label.id
+  }
+  ```
+
+related: []
+  - name: terraform-aws-ssm-ansible-setup
+    description: Terraform module that creates the s3 bucket and policies for session manager
+    url: https://gitlab.com/guardianproject-ops/terraform-aws-ssm-ansible-setup
+
+include:
+  - "docs/terraform.md"
+
+funded_by_cdr: true
+# Contributors to this project
+contributors:
+  - name: "Abel Luck"
+    gitlab: "abelxluck"
+    gravatar: 0f605397e0ead93a68e1be26dc26481a
