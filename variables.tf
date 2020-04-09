@@ -1,8 +1,3 @@
-variable "region" {
-  type        = string
-  description = "AWS Region this session manager config is for"
-}
-
 variable "s3_bucket_name" {
   type        = string
   description = "The name of bucket to store session logs. Specifying this enables writing session output to an Amazon S3 bucket."

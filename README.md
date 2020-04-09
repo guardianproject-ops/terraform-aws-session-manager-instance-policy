@@ -85,7 +85,6 @@ module "session_manager_instance_policy" {
   stage           = var.stage
   delimiter       = var.delimiter
   tags            = var.tags
-  region          = var.region
   s3_bucket_name  = var.ssm_logs_bucket
   s3_key_prefix   = module.label.id
 }
@@ -110,7 +109,6 @@ module "session_manager_instance_policy" {
 | delimiter | Delimiter to be used between `namespace`, `stage`, `name`, and `attributes` | `string` | `"-"` | no |
 | name | Name  (e.g. `app` or `database`) | `string` | n/a | yes |
 | namespace | Namespace (e.g. `org`) | `string` | n/a | yes |
-| region | AWS Region this session manager config is for | `string` | n/a | yes |
 | s3\_bucket\_name | The name of bucket to store session logs. Specifying this enables writing session output to an Amazon S3 bucket. | `string` | n/a | yes |
 | s3\_key\_prefix | To write output to a sub-folder, enter a sub-folder name. | `string` | n/a | yes |
 | stage | Environment (e.g. `test`, `dev`) | `string` | n/a | yes |

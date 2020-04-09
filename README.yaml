@@ -35,7 +35,6 @@ usage: |-
     stage           = var.stage
     delimiter       = var.delimiter
     tags            = var.tags
-    region          = var.region
     s3_bucket_name  = var.ssm_logs_bucket
     s3_key_prefix   = module.label.id
   }
