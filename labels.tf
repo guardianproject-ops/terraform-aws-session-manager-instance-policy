@@ -11,6 +11,13 @@ variable "namespace" {
 
 variable "stage" {
   type        = string
+  default     = ""
+  description = "Stage, e.g. 'prod', 'staging', 'dev', OR 'source', 'build', 'test', 'deploy', 'release'"
+}
+
+variable "environment" {
+  type        = string
+  default     = ""
   description = "Environment (e.g. `test`, `dev`)"
 }
 
