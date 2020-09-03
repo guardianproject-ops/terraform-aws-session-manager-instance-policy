@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://gitlab.com/guardianproject-ops/terraform-aws-session-manager-instance-policy/compare/0.2.0...0.3.0) (2020-09-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* upgrade to terraform 0.13
+
+### Features
+
+* upgrade to terraform 0.13 ([1f26737](https://gitlab.com/guardianproject-ops/terraform-aws-session-manager-instance-policy/commit/1f26737e77ce5d815cf0eeacb598036fbb043723))
+
 ## [0.2.0](https://gitlab.com/guardianproject-ops/terraform-aws-session-manager-instance-policy/compare/0.1.0...0.2.0) (2020-05-13)
 
 
