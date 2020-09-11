@@ -29,7 +29,7 @@ usage: |-
 
   ```hcl
   module "session_manager_instance_policy" {
-    source          = "git::https://gitlab.com/guardianproject-ops/terraform-aws-session-manager-instance-policy?ref=tags/0.1.0"
+    source          = "git::https://gitlab.com/guardianproject-ops/terraform-aws-session-manager-instance-policy?ref=master"
     namespace       = var.namespace
     name            = var.name
     stage           = var.stage
